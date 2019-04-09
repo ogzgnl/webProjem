@@ -1,145 +1,63 @@
-#mySidenav a {
-  position: absolute; /* Position them relative to the browser window */
-  left: -100px; /* Position them outside of the screen */
-  transition: 0.5s; /* Add transition on hover */
-  padding: 15px; /* 15px padding */
-  width: 100px; /* Set a specific width */
-  text-decoration: none; /* Remove underline */
-  font-size: 12px; /* Increase font size */
-  color: white; /* White text color */
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
 }
 
-#mySidenav a:hover {
-  left: 0; /* On mouse-over, make the elements appear as they should */
-}
-
-/* The about link: 20px from the top with a green background */
-#tozHakkında {
-  top: 100px;
-  background-color: #141414;
-}
-
-#faydaZarar {
-  text-align:left;
-  top: 150px;
-  background-color: #141414; /* Blue */
-}
-
-#magaza {
-  top: 200px;
-  background-color: #141414; /* Red */
-}
-
-#pazar {
-  top: 250px;
-  background-color: #141414 /* Light Black */
-}
-#logo{
-  text-align:center;
-  color:#a6a9ad;
-  height:110px;
-  width:1900px;
-  font-size:100px;
-  background-color:#1B1B1B;
-}
-#mainText{
-  font-size:20px;
-  padding: 30px;
-  background-color:#a6a9ad; 
-}
-
-
-{box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
+.bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
-  margin: auto;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("1.jpg");
+  min-height: 100%;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
+.bgimg-2 {
+  background-image: url("2.jpg");
+  min-height: 400px;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
+.bgimg-3 {
+  background-image: url("4.jpg");
+  min-height: 400px;
+}
+
+.caption {
   position: absolute;
+  left: 0;
   top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
   width: 100%;
   text-align: center;
+  color: #000;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
 }
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
+</style>
