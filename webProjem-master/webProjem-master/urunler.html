@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)file:///C:/Users/O%C4%9Fuz/Downloads/webProjem-master/webProjem-master/urunler.html -->
+<html><head>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="./urunler_files/css" rel="stylesheet">
+<style>
+	html{ 
+		background: url(bg.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	body {
+		margin: 0;
+		font-family: Raleway, sans-serif;
+	}
+	.yazi{
+		margin: auto;
+		width: 1500px; 	
+		height: 100%
+	}
+	.topnav {
+		margin: auto;
+		vertical-align: center;
+		width: 1500px; 	
+		overflow: hidden;
+		background-color: #333;
+	}
+
+	.topnav a {
+		float: left;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+
+	}
+
+	.topnav a:hover {
+		background-color: #ddd;
+		color: black;
+	}
+
+	.topnav a.active {
+		background-color: lightgrey;;
+		color: white;
+	}
+	.tab {
+		margin: auto;
+		float: left;
+		background-color: #f1f1f1;
+		width: 20%;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+
+	}
+
+	/* Style the buttons inside the tab */
+	.tab button {
+		display: block;
+		background-color: inherit;
+		color: black;
+		padding: 22px;
+		width: 100%;
+		border: none;
+		outline: none;
+		text-align: left;
+		cursor: pointer;
+		transition: 0.3s;
+		font-size: 17px;
+	}
+
+	/* Change background color of buttons on hover */
+	.tab button:hover {
+		background-color: #ddd;
+	}
+
+	/* Create an active/current "tab button" class */
+	.tab button.active {
+		background-color: #ccc;
+	}
+
+	/* Style the tab content */
+	.tabcontent {
+		padding-top: 10px;
+		float: auto;
+		width: 1500;
+		height: 100%;
+		background-color:rgba(255,255,255,0.5);
+	}
+	.tabcontent h3{
+		margin-left: 320px;
+	}
+	.tabcontent p {
+		margin-left: 320px;
+	}
+	.tabcontent h2{
+		margin-left: 320px;
+	}
+	.tabcontent h4{
+		margin-left: 320px;
+	}
+	.tabcontent ul{
+		margin-left: 320px;
+	}
+	.tabcontent li {
+		margin-left: 320px;
+	}
+	.sayfasonu{
+		background-color:#343435;
+		width: 100%;
+		height: 50px;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	}
+	.kartlardivi{
+		background-color: rgba(44, 32, 32, 0.3);
+		width: 250px; 
+		margin-left: 235px;
+		margin-top: -6900px;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  		transition: 0.3s;}
+  	.container {
+  		margin-top: -10px;
+  		padding-left: 10px;
+  		color:  white;
+	}
+.kartlardivi:hover{
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+	}
+	.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: white;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+.urun
+{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 1170px;
+	height: 250px;
+	background-color: darkgrey;
+	margin-left: 310px;
+}
+.urunyazi
+{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	background-color: grey;
+    margin-left: 250px;
+    margin-top: -170px;
+    margin-right: 20px;
+    text-align: left;
+}
+.urunyazi p
+{
+    padding-top:10px;
+}
+.checked {
+  color: orange;
+}
+  box-sizing: border-box;
+}
+
+/* style the container */
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+} 
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Two-column layout */
+.col {
+  margin: auto;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* hide the vertical line */
+  .vl {
+    display: none;
+  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+</style>
+
+	<title>Ürünler</title>
+</head>
+<body>
+	<div class="topnav">
+		 <a href="anasayfa.html">Anasayfa</a>
+	  <a href="urunler.html">Ürünler</a>
+   <a href="nasil.html">Nasıl kullanılmalı</a>
+   <a href="magaza.html">Mağaza</a>
+   <a href="market.html">Pazar</a>
+		<img src="logo.png" style="width: 75px; height: 35px; margin-top: 5px; float:right;">
+	</div>
+<div class="yazi">
+		<div class="tab">
+			<button class="tablinks active" onclick="openCity(event, &#39;kilo&#39;)" id="defaultOpen">Protein Tozları</button>
+			<button class="tablinks" onclick="openCity(event, &#39;kas&#39;)">Aminoasitler</button>
+			<button class="tablinks" onclick="openCity(event, &#39;hata&#39;)">Yağ Yakıcılar</button>
+		</div>
+	<div id="kilo" class="tabcontent" style="display: block;">
+		<div class="urun">
+			<img src="card2.jpg" style="width: 200px; height: 200px; margin-top : 20px; margin-left: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);">
+			<div class="urunyazi"><p> Ürün Adı: GOLD STANDART WHEY<br>
+				Ürün Fiyatı: 120tl<br>
+				Kaç Kullanımlık : 60<br>
+				Markası : ON Sports<br></p>
+				<span class="fa fa-star checked" style="margin-left: 390px; margin-bottom: 20px;"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+			</div>
+		</div>
+			<div class="urun">
+			<img src="card16.jpg" style="width: 200px; height: 200px; margin-top : 20px; margin-left: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);">
+			<div class="urunyazi"><p> Ürün Adı: COMBAT PROTEIN POWDER<br>
+				Ürün Fiyatı: 160tl<br>
+				Kaç Kullanımlık : 60<br>
+				Markası : MUSCLEPHARM<br></p>
+				<span class="fa fa-star checked" style="margin-left: 390px; margin-bottom: 20px;"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+			</div>
+		</div>
+			<div class="urun">
+			<img src="card17.jpg" style="width: 200px; height: 200px; margin-top : 20px; margin-left: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);">
+			<div class="urunyazi"><p> Ürün Adı: ISO ZERO<br>
+				Ürün Fiyatı: 180tl<br>
+				Kaç Kullanımlık : 60<br>
+				Markası : MUSCLETECH<br></p>
+				<span class="fa fa-star checked" style="margin-left: 390px; margin-bottom: 20px;"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+			</div>
+		</div>
+	</div>
+	<div id="kas" class="tabcontent" style="display: none;">
+		<div class="urun">
+			<img src="card4.jpg" style="width: 200px; height: 200px; margin-top : 20px; margin-left: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);">
+			<div class="urunyazi"><p> Ürün Adı: AMINO5600 <br>
+				Ürün Fiyatı: 320tl<br>
+				Kaç Kullanımlık : 500<br>
+				Markası: SCITED NUTRITION<br></p>
+				<span class="fa fa-star checked" style="margin-left: 390px; margin-bottom: 20px;"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+			</div>
+		</div>
+			<div class="urun">
+			<img src="card14.jpg" style="width: 200px; height: 200px; margin-top : 20px; margin-left: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);">
+			<div class="urunyazi"><p> Ürün Adı: ISOAMINO6000 <br>
+				Ürün Fiyatı: 300tl<br>
+				Kaç Kullanımlık : 500<br>
+				Markası: VITABOLIC<br></p>
+				<span class="fa fa-star checked" style="margin-left: 390px; margin-bottom: 20px;"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+			</div>
+		</div>
+			<div class="urun">
+			<img src="card15.jpg" style="width: 200px; height: 200px; margin-top : 20px; margin-left: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);">
+			<div class="urunyazi"><p> Ürün Adı: AMIN02700 <br>
+				Ürün Fiyatı: 280tl<br>
+				Kaç Kullanımlık : 350<br>
+				Markası: UNIVERSAL NUTRITION<br></p>
+				<span class="fa fa-star checked" style="margin-left: 390px; margin-bottom: 20px;"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+			</div>
+		</div>
+	</div>
+	<div id="hata" class="tabcontent" style="display: none;">
+		<div class="urun">
+			<img src="card13.jpg" style="width: 200px; height: 200px; margin-top : 20px; margin-left: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);">
+			<div class="urunyazi"><p> Ürün Adı: CLA ONE <br>
+				Ürün Fiyatı: 89tl<br>
+				Kaç Kullanımlık :70<br>
+				Markası: HARDLINE Nutrition<br></p>
+				<span class="fa fa-star checked" style="margin-left: 390px; margin-bottom: 20px;"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+			</div>
+		</div>
+			<div class="urun">
+			<img src="card12.jpg" style="width: 200px; height: 200px; margin-top : 20px; margin-left: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);">
+			<div class="urunyazi"><p> Ürün Adı: CLA BIG <br>
+				Ürün Fiyatı: 110tl<br>
+				Kaç Kullanımlık : 100<br>
+				Markası: BIGJOY Sports<br></p>
+				<span class="fa fa-star checked" style="margin-left: 390px; margin-bottom: 20px;"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+			</div>
+		</div>
+			<div class="urun">
+			<img src="card11.jpg" style="width: 200px; height: 200px; margin-top : 20px; margin-left: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);">
+			<div class="urunyazi"><p> Ürün Adı: L-CARNTINE <br>
+				Ürün Fiyatı: 80tl<br>
+				Kaç Kullanımlık : 70<br>
+				Markası: BIGJOY Sports<br></p>
+				<span class="fa fa-star checked" style="margin-left: 390px; margin-bottom: 20px;"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+			</div>
+		</div>
+	</div>
+</div>
+<p></p>
+    <div class="col">
+        <a href="https://www.facebook.com/ogzgnl" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Facebook
+         </a>
+        <a href="https://www.instagram.com/ogzgnls/" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i>Twitter
+        </a>
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i> Google
+        </a>
+      </div>
+
+<p></p>
+<div class="sayfasonu">
+	<div style="color: white;padding-top: 15px;text-align:center;font-size: 15px;display: block;position: relative;">25 Nisan 2019</div>
+	</div>
+
+</div>
+	<script>
+		function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body></html>

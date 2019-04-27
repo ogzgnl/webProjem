@@ -1,0 +1,307 @@
+	<!DOCTYPE html>
+	<!-- saved from url=(0083)file:///C:/Users/O%C4%9Fuz/Downloads/webProjem-master/webProjem-master/urunler.html -->
+	<html><head>
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="./urunler_files/css" rel="stylesheet">
+	<style>
+		html{ 
+			background: url(bg.jpg) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		body {
+			margin: 0;
+			font-family: Raleway, sans-serif;
+		}
+		.yazi{
+			margin: auto;
+			width: 1500px; 	
+			height: 100%
+			background-color:rgba(255,255,255,0.5);
+		}
+		.topnav {
+			margin: auto;
+			vertical-align: center;
+			width: 1500px; 	
+			overflow: hidden;
+			background-color: #333;
+		}
+
+		.topnav a {
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+
+		}
+
+		.topnav a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+		.topnav a.active {
+			background-color: lightgrey;;
+			color: white;
+		}
+		
+		.sayfasonu{
+			background-color:#343435;
+			width: 100%;
+			height: 50px;
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		}
+
+/* Center website */
+.main {
+	background-color:rgba(255,255,255,0.5);
+    margin: auto;
+    width: 1400px;
+    padding: 1px;
+    animation: 0.4s;
+    padding: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 32%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 10px;
+}
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+img:hover{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+	
+}
+	</style>
+			<title>Mağaza</title>
+	</head>
+	<body>
+	<div class="topnav">
+		<a href="anasayfa.html">Anasayfa</a>
+		<a href="urunler.html">Ürünler</a>
+		<a href="nasil.html">Nasıl kullanılmalı</a>
+		<a href="magaza.html" class="active">Mağaza</a>
+		<a href="market.html">Pazar</a>
+		<img src="logo.png" style="width: 75px; height: 35px; margin-top: 5px; float:right;">
+	</div>
+	<div class="yazi">
+		<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>BB4OURS.COM</h1>
+<hr>
+
+<h2>ÜRÜNLER</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Hepsi</button>
+  <button class="btn" onclick="filterSelection('protein')"> Protein Tozları</button>
+  <button class="btn" onclick="filterSelection('asit')"> Aminoasitler</button>
+  <button class="btn" onclick="filterSelection('fat')"> Yağ Yakıcılar</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column protein">
+    <div class="content">
+      <img src="card2.jpg" alt="Mountains" style="width:100%">
+      <h4>GOLD STANDART WHEY</h4>
+<p> Ürün Adı: GOLD STANDART WHEY<br>
+				Ürün Fiyatı: 120tl<br>
+				Kaç Kullanımlık : 60<br>
+				Markası : ON Sports<br></p>
+    </div>
+  </div>
+  <div class="column protein">
+    <div class="content">
+    <img src="card16.jpg" alt="Lights" style="width:100%">
+        <h4>COMBAT PROTEIN POWDER</h4>
+<p> Ürün Adı: COMBAT PROTEIN POWDER<br>
+				Ürün Fiyatı: 160tl<br>
+				Kaç Kullanımlık : 60<br>
+				Markası : MUSCLEPHARM<br></p>
+    </div>
+  </div>
+  <div class="column protein">
+    <div class="content">
+    <img src="card17.jpg" alt="Nature" style="width:100%">
+      <h4>ISO ZERO</h4>
+      <p> Ürün Adı: ISO ZERO<br>
+				Ürün Fiyatı: 180tl<br>
+				Kaç Kullanımlık : 60<br>
+				Markası : MUSCLETECH<br></p>
+    </div>
+  </div>
+  
+  <div class="column asit">
+    <div class="content">
+      <img src="card4.jpg" alt="Car" style="width:100%">
+      <h4>AMINO5600</h4>
+      <p> Ürün Adı: AMINO5600 <br>
+				Ürün Fiyatı: 320tl<br>
+				Kaç Kullanımlık : 500<br>
+				Markası: SCITED NUTRITION<br></p>
+    </div>
+  </div>
+  <div class="column asit">
+    <div class="content">
+    <img src="card14.jpg" alt="Car" style="width:100%">
+      <h4>ISOAMINO6000</h4>
+      <p> Ürün Adı: ISOAMINO6000 <br>
+				Ürün Fiyatı: 300tl<br>
+				Kaç Kullanımlık : 500<br>
+				Markası: VITABOLIC<br></p>
+    </div>
+  </div>
+  <div class="column asit">
+    <div class="content">
+    <img src="card15.jpg" alt="Car" style="width:100%">
+      <h4>AMIN02700</h4>
+      <p> Ürün Adı: AMIN02700 <br>
+				Ürün Fiyatı: 280tl<br>
+				Kaç Kullanımlık : 350<br>
+				Markası: UNIVERSAL NUTRITION<br></p>
+    </div>
+  </div>
+
+  <div class="column fat">
+    <div class="content">
+      <img src="card13.jpg" alt="Car" style="width:100%">
+      <h4>CLA ONE</h4>
+      <p> Ürün Adı: CLA ONE <br>
+				Ürün Fiyatı: 89tl<br>
+				Kaç Kullanımlık :70<br>
+				Markası: HARDLINE Nutrition<br></p>
+    </div>
+  </div>
+  <div class="column fat">
+    <div class="content">
+    <img src="card12.jpg" alt="Car" style="width:100%">
+      <h4>CLA BIG</h4>
+      <p> Ürün Adı: CLA BIG <br>
+				Ürün Fiyatı: 110tl<br>
+				Kaç Kullanımlık : 100<br>
+				Markası: BIGJOY Sports<br></p>
+    </div>
+  </div>
+  <div class="column fat">
+    <div class="content">
+    <img src="card11	.jpg" alt="Car" style="width:100%">
+      <h4>L-CARNTINE</h4>
+      <p> Ürün Adı: L-CARNTINE <br>
+				Ürün Fiyatı: 80tl<br>
+				Kaç Kullanımlık : 70<br>
+				Markası: BIGJOY Sports<br></p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+	</div>
+	<p></p>
+	<div class="sayfasonu">
+	<div style="color: white;padding-top: 15px;text-align:center;font-size: 15px;display: block;position: relative;">25 Nisan 2019</div>
+	</div>
+	<script>
+		filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+	</script>
+
+	</body></html>
