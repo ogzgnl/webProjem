@@ -126,6 +126,46 @@ img:hover{
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
 	
 }
+
+button:hover, a:hover {
+  opacity: 0.7;
+  background-color: #184959;
+}
+.button {
+  position: relative;
+  background-color: grey;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
 	</style>
 			<title>Mağaza</title>
 	</head>
@@ -163,7 +203,8 @@ img:hover{
 <p> Ürün Adı: GOLD STANDART WHEY<br>
 				Ürün Fiyatı: 120tl<br>
 				Kaç Kullanımlık : 60<br>
-				Markası : ON Sports<br></p>
+				Markası : ON Sports<br>
+        <button class="button" style="margin-left:120px; margin-top: 15px;">Satın Al</button></p>
     </div>
   </div>
   <div class="column protein">
@@ -173,7 +214,8 @@ img:hover{
 <p> Ürün Adı: COMBAT PROTEIN POWDER<br>
 				Ürün Fiyatı: 160tl<br>
 				Kaç Kullanımlık : 60<br>
-				Markası : MUSCLEPHARM<br></p>
+				Markası : MUSCLEPHARM<br>
+        <button class="button" style="margin-left:120px; margin-top: 15px;">Satın Al</button></p>
     </div>
   </div>
   <div class="column protein">
@@ -183,7 +225,8 @@ img:hover{
       <p> Ürün Adı: ISO ZERO<br>
 				Ürün Fiyatı: 180tl<br>
 				Kaç Kullanımlık : 60<br>
-				Markası : MUSCLETECH<br></p>
+				Markası : MUSCLETECH<br>
+           <button class="button" style="margin-left:120px; margin-top: 15px;">Satın Al</button></p></p>
     </div>
   </div>
   
@@ -194,7 +237,8 @@ img:hover{
       <p> Ürün Adı: AMINO5600 <br>
 				Ürün Fiyatı: 320tl<br>
 				Kaç Kullanımlık : 500<br>
-				Markası: SCITED NUTRITION<br></p>
+				Markası: SCITED NUTRITION<br>
+           <button class="button" style="margin-left:120px; margin-top: 15px;">Satın Al</button></p></p>
     </div>
   </div>
   <div class="column asit">
@@ -204,7 +248,8 @@ img:hover{
       <p> Ürün Adı: ISOAMINO6000 <br>
 				Ürün Fiyatı: 300tl<br>
 				Kaç Kullanımlık : 500<br>
-				Markası: VITABOLIC<br></p>
+				Markası: VITABOLIC<br>
+           <button class="button" style="margin-left:120px; margin-top: 15px;">Satın Al</button></p></p>
     </div>
   </div>
   <div class="column asit">
@@ -214,7 +259,8 @@ img:hover{
       <p> Ürün Adı: AMIN02700 <br>
 				Ürün Fiyatı: 280tl<br>
 				Kaç Kullanımlık : 350<br>
-				Markası: UNIVERSAL NUTRITION<br></p>
+				Markası: UNIVERSAL NUTRITION<br>
+           <button class="button" style="margin-left:120px; margin-top: 15px;">Satın Al</button></p></p>
     </div>
   </div>
 
@@ -225,7 +271,8 @@ img:hover{
       <p> Ürün Adı: CLA ONE <br>
 				Ürün Fiyatı: 89tl<br>
 				Kaç Kullanımlık :70<br>
-				Markası: HARDLINE Nutrition<br></p>
+				Markası: HARDLINE Nutrition<br>
+           <button class="button" style="margin-left:120px; margin-top: 15px;">Satın Al</button></p></p>
     </div>
   </div>
   <div class="column fat">
@@ -235,7 +282,8 @@ img:hover{
       <p> Ürün Adı: CLA BIG <br>
 				Ürün Fiyatı: 110tl<br>
 				Kaç Kullanımlık : 100<br>
-				Markası: BIGJOY Sports<br></p>
+				Markası: BIGJOY Sports<br>
+           <button class="button" style="margin-left:120px; margin-top: 15px;">Satın Al</button></p></p>
     </div>
   </div>
   <div class="column fat">
@@ -245,7 +293,8 @@ img:hover{
       <p> Ürün Adı: L-CARNTINE <br>
 				Ürün Fiyatı: 80tl<br>
 				Kaç Kullanımlık : 70<br>
-				Markası: BIGJOY Sports<br></p>
+				Markası: BIGJOY Sports<br>
+           <button class="button" style="margin-left:120px; margin-top: 15px;">Satın Al</button></p></p>
     </div>
   </div>
 <!-- END GRID -->

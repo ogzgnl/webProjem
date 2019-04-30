@@ -3,6 +3,7 @@
 <html><head>
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="./urunler_files/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 	html{ 
 		background: url(bg.jpg) no-repeat center center fixed; 
@@ -52,6 +53,7 @@
 		float: left;
 		background-color: #f1f1f1;
 		width: 20%;
+		height: 200px;
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
 
 	}
@@ -110,16 +112,16 @@
 	.sayfasonu{
 		background-color:#343435;
 		width: 100%;
-		height: 50px;
+		height: 100%;
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	}
 	.kartlardivi{
 		background-color: rgba(44, 32, 32, 0.3);
 		width: 250px; 
-		margin-left: 235px;
-		margin-top: -6900px;
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  		transition: 0.3s;}
+  		transition: 0.3s;
+  		margin: 25px;
+  	}
   	.container {
   		margin-top: -10px;
   		padding-left: 10px;
@@ -146,33 +148,117 @@ a {
   font-size: 22px;
   color: black;
 }
+ .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
 
-button:hover, a:hover {
-  opacity: 0.7;
+.fa:hover {
+    opacity: 0.7;
 }
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
 </style>
 
 	<title>Nasıl Kullanılmalı ?</title>
 </head>
 <body>
 	<div class="topnav">
-		 <a href="anasayfa.html">Anasayfa</a>
-	  <a href="urunler.html">Ürünler</a>
+   <a href="anasayfa.html">Anasayfa</a>
+   <a href="urunler.html">Ürünler</a>
    <a href="nasil.html" class="active">Nasıl kullanılmalı</a>
    <a href="magaza.html">Mağaza</a>
    <a href="market.html">Pazar</a>
 		<img src="logo.png" style="width: 75px; height: 35px; margin-top: 5px; float:right;">
 	</div>
-
-  
-
 	<div class="yazi">
 		<div class="tab">
-			<button class="tablinks active" onclick="openCity(event, &#39;kilo&#39;)" id="defaultOpen">Kilo Vermek</button>
-			<button class="tablinks" onclick="openCity(event, &#39;kas&#39;)">Kas Kazanmak</button>
-			<button class="tablinks" onclick="openCity(event, &#39;hata&#39;)">En Çok Yapılan Hatalar</button>
-		</div>
-	<div id="kilo" class="tabcontent" style="display: block;">
+		<button class="tablinks active" onclick="openCity(event, &#39;kilo&#39;)" id="defaultOpen">Kilo Vermek</button>
+		<button class="tablinks" onclick="openCity(event, &#39;kas&#39;)">Kas Kazanmak</button>
+		<button class="tablinks" onclick="openCity(event, &#39;hata&#39;)">En Çok Yapılan Hatalar</button>
+<div class="kartlardivi">
+  <img src="card1.jpg" alt="Avatar" style="width:100%; border-width: 500px; border-style: none; border-color:white;">
+  <div class="container">
+    <h4><b>Spor Aletleri</b></h4> 
+    <p style="padding-top:-10px;">Dambıl</p> 
+  </div>
+   <img src="card2.jpg" alt="Avatar" style="width:100%; border-width: 500px; border-style: none; border-color:white;">
+  <div class="container">
+    <h4><b>Besin</b></h4> 
+    <p style="padding-top:-10px;">Protein tozu</p> 
+  </div>
+   <img src="card3.jpg" alt="Avatar" style="width:100%; border-width: 500px; border-style: none; border-color:white;">
+  <div class="container">
+    <h4><b>Spor Aletleri</b></h4> 
+    <p style="padding-top:-10px;">Atlama ipi</p> 
+  </div>
+   <img src="card4.jpg" alt="Avatar" style="width:100%; border-width: 500px; border-style: none; border-color:white;">
+  <div class="container">
+    <h4><b>Besin</b></h4> 
+    <p style="padding-top:-10px;">Aminoasit</p> 
+  </div>
+   <img src="card5.jpg" alt="Avatar" style="width:100%; border-width: 500px; border-style: none; border-color:white;">
+  <div class="container">
+    <h4><b>Spor Aletleri</b></h4> 
+    <p style="padding-top:-10px;">Koşu bandı</p> 
+  </div>
+   <img src="card6.jpg" alt="Avatar" style="width:100%; border-width: 500px; border-style: none; border-color:white;">
+  <div class="container">
+    <h4><b>Spor Aletleri</b></h4> 
+    <p style="padding-top:-10px;">Uzay bisikleti</p> 
+  </div>
+   <img src="card7.jpg" alt="Avatar" style="width:100%; border-width: 500px; border-style: none; border-color:white;">
+  <div class="container">
+    <h4><b>Spor Aletleri</b></h4> 
+    <p style="padding-top:-10px;">Ağırlık 5.kg</p> 
+  </div>
+   <img src="card8.jpg" alt="Avatar" style="width:100%; border-width: 500px; border-style: none; border-color:white;">
+  <div class="container">
+    <h4><b>Spor Aletleri</b></h4> 
+    <p style="padding-top:-10px;">Omuz hareketleri yardımcısı</p> 
+  </div>
+   <img src="card9.jpg" alt="Avatar" style="width:100%; border-width: 500px; border-style: none; border-color:white;">
+  <div class="container">
+    <h4><b>Spor Aletleri</b></h4> 
+    <p style="padding-top:-10px;">Eldivenler</p> 
+  </div>
+   <img src="card10.jpg" alt="Avatar" style="width:100%; border-width: 500px; border-style: none; border-color:white;">
+  <div class="container">
+    <h4><b>Spor Aletleri</b></h4> 
+    <p style="padding-top:-10px;">Bilek güçlendirici</p> 
+  </div>
+  <div class="card">
+  <img src="logo1.jpg" alt="John" style="width:100%">
+  <h1>Oğuz GÖNÜL</h1>
+  <p class="title">Site sahibi ve Öğrenci</p>
+  <p>Gelişim Üniversitesi</p>
+</div>
+</div>
+	</div>
+<div id="kilo" class="tabcontent" style="display: block;">
 <h2>1- Çok düşük kalorilerle beslenmeyin.</h2>
 <p>Kilo vermenin en basit açıklaması matematikten geçer. Yaktığımız kaloriden daha az kalori alırsak kilo veririz. Buna kalorik açık yaratmak deriz. Oldukça basit aslında. O zaman neden aldığımız kaloriyi iyice düşürüp daha çok kilo vermeyelim? Eğer çok düşük kalori ile beslenirsek, vücut direncinde düşme, hastalık, bitkinlik, kas kaybı gibi durumlarla karşılaşabiliriz. Bu da uzun vadede metabolizmanın yavaşlamasına ve kilo vermenin daha da zorlaşmasına yol açabilir./p&gt;</p>
 <p>Çözüm olarak kendimizi aç bırakmak yerine, dengeli ve düzenli beslenerek kilomuzu takip etmeliyiz. Kilo vermek için sabırlı olup fiziksel aktiviteyi arttırmak en sağlıklı ve verimli yol olacaktır. Bu sayede, zamanla kilo verme sürecimizi izleyerek, kilo veremediğimizde aktiviteyi arttırarak kalori yakabilir veya kaloriyi daha da düşürebiliriz. Bu sayede kilo vermeye başladığımızda aç kalıp, güçsüzleşmek yerine yaptığımız spor ile birlikte daha verimli ve uzun vadeli kilo verebiliriz.</p>
@@ -590,7 +676,6 @@ button:hover, a:hover {
 <p>&nbsp;</p>
 <p><strong>Bacaklarınızı Çalıştırın</strong></p>
 <p>Söylememe bile gerek yok, tüm sporlarda ve bedenin her hareketinde kuvvetin ana vatanı bacaklar. Ama ne yazık ki gençlerin büyük bir çoğunluğu kendilerini birilerine beğendirmek, sahilde veya Face’de vücutlarını herkese göstermek ve popüler kültürün onlara emrettiği “six packlerini” sergilemek için ağırlık çalışıyorlar. Oysa bacak çalışmadıkları zaman diğer kasların gelişimini de yavaşlattıklarının farkında değiller.</p>
-<p><img style="display: block; margin-left: auto; margin-right: auto;" title="" src="./urunler_files/GlBpu.jpg" alt="GlBpu" width="275" height="264"></p>
 <p>Bacaklar ve kalçalar vücudun en büyük kaslarıdır ve en çok ağırlığı onlarla kaldırırsınız. En çok kası bacaklarınızı ve kalçalarınızı çalıştırdığınız zaman çalıştırırsınız. Bütün bunlar anabolik hormonların artmasını sağlar. Büyüme hormonu, Testosteron&nbsp;ve IGF-1 hormonları en çok bacak egzersizleri sonrasında artar. Ve böylece tüm vücudunuz için iyi bir iş yapmış olursunuz.</p>
 <p><strong>Ağırlığı Arttırın</strong></p>
 <p>Eğer her çalışmada aynı ağırlığı kaldırırsanız hiçbir şey gelişmez. İsterseniz 20 sene aynı ağırlığı kaldırın ne kuvvetiniz artar, ne de kaslarınız gelişir. İnsan vücudu kendisine sunulan yüklere kolaylıkla adapte olur. Yani ağırlığı arttırdığınız zaman kaslarını güçlendirerek buna yanıt verir.</p>
@@ -620,66 +705,11 @@ button:hover, a:hover {
 </div>
 <p></p>
 <div class="sayfasonu">
-	<div style="color: white;padding-top: 15px;text-align:center;font-size: 15px;display: block;position: relative;">25 Nisan 2019</div>
+<a href="https://www.facebook.com/ogzgnl" class="fa fa-facebook" style="text-align: center;"></a>
+<a href="https://www.youtube.com/channel/UCg_PIinxMYjW83QcgsQvolg?view_as=subscriber" class="fa fa-youtube"></></a>
+<a href="https://www.instagram.com/ogzgnls/" class="fa fa-instagram"></></a>
 	</div>
-<div class="kartlardivi">
-  <img src="card1.jpg" alt="Avatar" style="width:100%; border-width: 500px; border-style: none; border-color:white;">
-  <div class="container">
-    <h4><b>Spor Aletleri</b></h4> 
-    <p style="padding-top:-10px;">Dambıl</p> 
-  </div>
-   <img src="card2.jpg" alt="Avatar" style="width:100%; border-width: 500px; border-style: none; border-color:white;">
-  <div class="container">
-    <h4><b>Besin</b></h4> 
-    <p style="padding-top:-10px;">Protein tozu</p> 
-  </div>
-   <img src="card3.jpg" alt="Avatar" style="width:100%; border-width: 500px; border-style: none; border-color:white;">
-  <div class="container">
-    <h4><b>Spor Aletleri</b></h4> 
-    <p style="padding-top:-10px;">Atlama ipi</p> 
-  </div>
-   <img src="card4.jpg" alt="Avatar" style="width:100%; border-width: 500px; border-style: none; border-color:white;">
-  <div class="container">
-    <h4><b>Besin</b></h4> 
-    <p style="padding-top:-10px;">Aminoasit</p> 
-  </div>
-   <img src="card5.jpg" alt="Avatar" style="width:100%; border-width: 500px; border-style: none; border-color:white;">
-  <div class="container">
-    <h4><b>Spor Aletleri</b></h4> 
-    <p style="padding-top:-10px;">Koşu bandı</p> 
-  </div>
-   <img src="card6.jpg" alt="Avatar" style="width:100%; border-width: 500px; border-style: none; border-color:white;">
-  <div class="container">
-    <h4><b>Spor Aletleri</b></h4> 
-    <p style="padding-top:-10px;">Uzay bisikleti</p> 
-  </div>
-   <img src="card7.jpg" alt="Avatar" style="width:100%; border-width: 500px; border-style: none; border-color:white;">
-  <div class="container">
-    <h4><b>Spor Aletleri</b></h4> 
-    <p style="padding-top:-10px;">Ağırlık 5.kg</p> 
-  </div>
-   <img src="card8.jpg" alt="Avatar" style="width:100%; border-width: 500px; border-style: none; border-color:white;">
-  <div class="container">
-    <h4><b>Spor Aletleri</b></h4> 
-    <p style="padding-top:-10px;">Omuz hareketleri yardımcısı</p> 
-  </div>
-   <img src="card9.jpg" alt="Avatar" style="width:100%; border-width: 500px; border-style: none; border-color:white;">
-  <div class="container">
-    <h4><b>Spor Aletleri</b></h4> 
-    <p style="padding-top:-10px;">Eldivenler</p> 
-  </div>
-   <img src="card10.jpg" alt="Avatar" style="width:100%; border-width: 500px; border-style: none; border-color:white;">
-  <div class="container">
-    <h4><b>Spor Aletleri</b></h4> 
-    <p style="padding-top:-10px;">Bilek güçlendirici</p> 
-  </div>
-  <div class="card">
-  <img src="logo1.jpg" alt="John" style="width:100%">
-  <h1>Oğuz GÖNÜL</h1>
-  <p class="title">Site sahibi ve Öğrenci</p>
-  <p>Gelişim Üniversitesi</p>
-</div>
-</div>
+
 	<script>
 		function openCity(evt, cityName) {
 			var i, tabcontent, tablinks;
